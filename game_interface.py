@@ -113,7 +113,7 @@ def pc():
 			move = random.randint(0, len(edge)-1)
 			return edge[move]
 
-# Configure text on button while playing with system
+# Configure text on button while playing with system 
 def get_text_pc(i, j, gb, l1, l2):
 	global sign
 	if board[i][j] == ' ':
@@ -195,7 +195,7 @@ def withplayer(game_board):
 def play():
 	menu = Tk()
 	menu.geometry("250x250")
-	menu.title("Tic Tac Toe")
+	menu.title("Quantum Tic Tac Toe")
 	wpc = partial(withpc, menu)
 	wpl = partial(withplayer, menu)
 	
