@@ -80,4 +80,23 @@ This generates the quantum circuits representing the tic toc toe game, based on 
 
 
 
+print(result.get_counts())
+print(list(map(lambda x: int(x),list(list(result.get_counts().keys())[0][::-1]))))
+
+
+We then transform  output register string into a list of integers in the right order so the first element corresponds to the first tile
+```
+print(result.get_counts())
+print(list(map(lambda x: int(x),list(list(result.get_counts().keys())[0][::-1]))))
+
+result:
+{'010011110': 1}
+[0, 1, 1, 1, 1, 0, 0, 1, 0]
+```
+0 0 1
+1 0 1
+0 1 1
+
+
+
 
