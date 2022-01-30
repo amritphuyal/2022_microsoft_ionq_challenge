@@ -38,16 +38,7 @@ The maiin component of the game is **back-end.py**
 We used 9 different qubits to represent the tiles and then designed an algorithm to allow entaglement when players switch to Quantum mode.
 
 
-###################
-#    #     #      #
-# 6  # 7   #  8   #
-#    #     #      #
-###################
-#    #    #       #
-#  3 # 4  # 5     #  
-#    #    #       #
-###################
-#    #    #       #
-# 0  # 1  #  2    #
-#    #    #       #   
-###################
+| 6 | 7 | 8 |
+|---|---|---|
+| 3 | 4 | 5 |
+| 0 | 1 | 2 |
