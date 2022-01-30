@@ -114,7 +114,7 @@ def withplayer(game_board):
 # main function
 def play():
 	menu = Tk()
-	menu.geometry("250x250")
+	menu.geometry("400x400")
 	menu.title("Quantum Tic Tac Toe")
 	
 	wpl = partial(withplayer, menu)
