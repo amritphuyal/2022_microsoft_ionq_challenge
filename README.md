@@ -42,3 +42,28 @@ We used 9 different qubits to represent the tiles and then designed an algorithm
 |---|---|---|
 | 3 | 4 | 5 |
 | 0 | 1 | 2 |
+
+
+We take the inputs of both player and respresent them as Quantum states, such that we have a list of marking by player_1 (whose states are *|0>* ) and list of inputs from Player_2 whose states are *|1>*)
+
+```
+l_player_1 = [0] #list of qbits cell numbers inicialized to 0
+l_player_2 = [2,3] #list of qbits cell numbers inicialized to 1
+l_entangled = [(1,6),(7,8),(4,5)] #list of pairs of cells that need to be entangled to |01>+|10>
+
+# Create a Quantum Circuit acting on the q register
+circuit = QuantumCircuit(9, 9)
+circuit.name = "Tic tac toe"
+
+
+for inx  in range(len(l_player_2)):
+    circuit.x(l_player_2[inx])
+for inx in range(len(l_entangled)):
+    circuit.h(l_entangled[inx][0])
+    circuit.x(l_entangled[inx][1])
+    circuit.cx(l_entangled[inx][0],l_entangled[inx][1])
+circuit.measure(list(range(9)), list(range(9)))
+
+# Print out the circuit
+circuit.draw()
+```
