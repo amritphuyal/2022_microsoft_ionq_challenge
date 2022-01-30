@@ -122,12 +122,12 @@ def get_text_pc(i, j, gb, l1, l2):
 			if sign % 2 == 0:
 				l1.config(state=DISABLED)
 				l2.config(state=ACTIVE)
-				board[i][j] = player1 
+				board[i][j] = "X"
 			else:
 				button[i][j].config(state=ACTIVE)
 				l2.config(state=DISABLED)
 				l1.config(state=ACTIVE)
-				board[i][j] = player2 
+				board[i][j] = "O" 
 			sign += 1
 			button[i][j].config(text=board[i][j])
 
