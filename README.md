@@ -112,3 +112,17 @@ In this case Player 2 win : )
 
 MIT iQUHACK 2022 was a really amzing experience. We all are from diverse communities  and educational  background but this hackathon had bring us together  to work on a single goal. We made some new friends , explored the operation on real Quantum hardware, Strengthen our knowledge on Quantum computing and Qiskit as a whole.
 It is really an honour to participate in the Hackathon.
+
+
+
+
+
+
+
+## ## TEAM : QUICK QUACK TOE ![QUA](https://user-images.githubusercontent.com/68440833/151708447-089d7cc1-dff2-41fa-b1b8-e8d48d321952.png) TEAM
+
+
+
+
+
+
