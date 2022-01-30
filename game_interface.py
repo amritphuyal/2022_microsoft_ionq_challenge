@@ -202,19 +202,19 @@ def play():
 	head = Button(menu, text = "Welcome to Quantum tic-tac-to",
 				activeforeground = 'white',
 				activebackground = "blue", bg = "green",
-				fg = "white", width = 500, font = 'summer', bd = 5)
+				fg = "black", width = 500, font = 'summer', bd = 5)
 	
 	B1 = Button(menu, text = "Single Player", command = wpc,
 				activeforeground = 'white',
 				activebackground = "blue", bg = "green",
-				fg = "white", width = 500, font = 'summer', bd = 5)
+				fg = "black", width = 500, font = 'summer', bd = 5)
 	
 	B2 = Button(menu, text = "Multi Player", command = wpl, activeforeground = 'white',
-				activebackground = "blue", bg = "green", fg = "white",
+				activebackground = "blue", bg = "green", fg = "black",
 				width = 500, font = 'summer', bd = 5)
 	
 	B3 = Button(menu, text = "Exit", command = menu.quit, activeforeground = 'white',
-				activebackground = "blue", bg = "green", fg = "white",
+				activebackground = "blue", bg = "green", fg = "black",
 				width = 500, font = 'summer', bd = 5)
 	head.pack(side = 'top')
 	B1.pack(side = 'top')
