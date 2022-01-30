@@ -42,6 +42,7 @@ def get_text(i, j, gb, l1, l2):
 			board[i][j] = "O"
 		sign += 1
 		button[i][j].config(text=board[i][j])
+	
 	if winner(board, "X"):
 		gb.destroy()
 		box = messagebox.showinfo("Winner", "Player 1 won the match")
@@ -116,19 +117,22 @@ def pc():
 # Configure text on button while playing with system 
 def get_text_pc(i, j, gb, l1, l2):
 	global sign
+	
 	if board[i][j] == ' ':
-		if sign % 2 == 0:
-			l1.config(state=DISABLED)
-			l2.config(state=ACTIVE)
-			board[i][j] = "X"
-		else:
-			button[i][j].config(state=ACTIVE)
-			l2.config(state=DISABLED)
-			l1.config(state=ACTIVE)
-			board[i][j] = "O"
-		sign += 1
-		button[i][j].config(text=board[i][j])
-	x = True
+			if sign % 2 == 0:
+				l1.config(state=DISABLED)
+				l2.config(state=ACTIVE)
+				board[i][j] = player1 
+			else:
+				button[i][j].config(state=ACTIVE)
+				l2.config(state=DISABLED)
+				l1.config(state=ACTIVE)
+				board[i][j] = player2 
+			sign += 1
+			button[i][j].config(text=board[i][j])
+
+	x = True 
+
 	if winner(board, "X"):
 		gb.destroy()
 		x = False
@@ -175,9 +179,28 @@ def withpc(game_board):
 				width = 10, state = DISABLED)
 	
 	l2.grid(row = 2, column = 1)
+
+	def game_mode(): 
+		if(switch['text']=='Quantum mode is off'):
+		 switch['text'] = 'Quantum mode is on'
+
+		else:
+		 switch['text'] = 'Quantum mode is off'
+	
+	switch = Button(game_board, text='Quantum mode is off', command = game_mode)
+	switch.grid( row = 0, column = 1)
+
 	gameboard_pc(game_board, l1, l2)
+	
+	
+	
+
+
+	
 
 # Initialize the game board to play with another player
+#Quantum mode button 
+
 def withplayer(game_board):
 	game_board.destroy()
 	game_board = Tk()
@@ -189,6 +212,15 @@ def withplayer(game_board):
 				width = 10, state = DISABLED)
 	
 	l2.grid(row = 2, column = 1)
+
+	def change_mode(): 
+		if(switch['text']=='Quantum mode is off'):
+		 switch['text'] = 'Quantum mode is on'
+		else:
+		 switch['text'] = 'Quantum mode is off'
+	
+	switch = Button(game_board, text='Quantum mode is off', command = change_mode)
+	switch.grid(row = 0, column = 1)
 	gameboard_pl(game_board, l1, l2)
 
 # main function
@@ -207,19 +239,21 @@ def play():
 	B1 = Button(menu, text = "Single Player", command = wpc,
 				activeforeground = 'white',
 				activebackground = "blue", bg = "green",
-				fg = "black", width = 500, font = 'summer', bd = 5)
+				fg = "white", width = 500, font = 'summer', bd = 5)
 	
 	B2 = Button(menu, text = "Multi Player", command = wpl, activeforeground = 'white',
-				activebackground = "blue", bg = "green", fg = "black",
+				activebackground = "blue", bg = "green", fg = "white",
 				width = 500, font = 'summer', bd = 5)
 	
 	B3 = Button(menu, text = "Exit", command = menu.quit, activeforeground = 'white',
-				activebackground = "blue", bg = "green", fg = "black",
+				activebackground = "blue", bg = "green", fg = "white",
 				width = 500, font = 'summer', bd = 5)
+
 	head.pack(side = 'top')
 	B1.pack(side = 'top')
 	B2.pack(side = 'top')
 	B3.pack(side = 'top')
+	
 	menu.mainloop()
 
 # Call main function
