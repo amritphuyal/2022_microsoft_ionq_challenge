@@ -199,7 +199,7 @@ def play():
 	wpc = partial(withpc, menu)
 	wpl = partial(withplayer, menu)
 	
-	head = Button(menu, text = "Welcome to Quantum tic-tac-to",
+	head = Button(menu, text = "Welcome to Quantum tic-tac-toe",
 				activeforeground = 'white',
 				activebackground = "blue", bg = "green",
 				fg = "black", width = 500, font = 'summer', bd = 5)
