@@ -17,6 +17,9 @@ MIT iQuHACK 2022 x Microsoft x IonQ Challenge
 
 For the **MIT iQuHACK 2022 x Microsoft x IonQ Challenge** we decided to create a unique **Quantum-classical tic-tac-toe**.
 
+## Presentation Slides
+[Slides](https://docs.google.com/presentation/d/1tBLsqmwnBltVq_fbVn21o7O-7fPXAK1HzJ5LmiDLOyc/edit?usp=sharing)
+
 The game explores superposition properties of qubits as follows:
 
 
