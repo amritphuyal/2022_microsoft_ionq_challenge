@@ -70,3 +70,14 @@ circuit.draw()
 This generates the quantum circuits representing the tic toc toe game, based on the 3 input lists.
 
 ![image](https://user-images.githubusercontent.com/68440833/151706963-23be38d3-669f-4aeb-b389-0745b07988e8.png)
+
+
+
+
+
+![image (1)](https://user-images.githubusercontent.com/68440833/151707525-40dd0ba4-3e33-4e8b-9dfd-677cacf672c8.png)
+
+
+
+
+
