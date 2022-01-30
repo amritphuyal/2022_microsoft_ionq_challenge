@@ -10,9 +10,19 @@ MIT iQuHACK 2022 x Microsoft x IonQ Challenge
 </p>
 
 
-# QUANTUM TIC-TAC-TOE
+# QUANTUM-CLASSICAL TIC-TAC-TOE
 
-For the **MIT iQuHACK 2022 x Microsoft x IonQ Challenge** we decided to create a unique **Quantum tic-tac-toe**.
+For the **MIT iQuHACK 2022 x Microsoft x IonQ Challenge** we decided to create a unique **Quantum-classical tic-tac-toe**.
+
+The game explores superposition properties of qubits as follows:
 
 
-The game allows a player to swith between two modes: **Quantum mode** or **Classical mode**
+ - The game has 2 players, player1 and player2
+ - The tiles can be marked in a Classical way or in a Quantum way.
+ - The game allows a player to switch between two modes: **Quantum mode** or **Classical mode**.
+ - By default, Player1 makes a tile with a |0> and player2 makes a tile with a |1>.
+ - Quantum mode has an interesting twist,  During a player turn, a player can decide to entangle two tiles instead of marking a tile.
+ -  If that is the case, then the entangled tiles can not be marked for any other player during the game.
+ - Once all the tiles are marked or entangled the quantum circuit of the game is initialized and the qubits are measured reviling the final state of the game.
+ - We then run an Error-correcting algorithm by repetition.
+ - Who ever has 3 in a line wins. If both will then the code is run again until one one wins.
