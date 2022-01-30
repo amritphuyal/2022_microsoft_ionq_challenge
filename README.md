@@ -8,3 +8,11 @@ MIT iQuHACK 2022 x Microsoft x IonQ Challenge
   <a href="https://iquhack.mit.edu/" target="_blank"><img src="https://user-images.githubusercontent.com/10100490/151647370-d161d5b5-119c-4db9-898e-cfb1745a8310.png" width="8%" style="padding-left: 5%"/> </a>
   
 </p>
+
+
+# QUANTUM TIC-TAC-TOE
+
+For the **MIT iQuHACK 2022 x Microsoft x IonQ Challenge** we decided to create a unique **Quantum tic-tac-toe**.
+
+
+The game allows a player to swith between two modes: **Quantum mode** or **Classical mode**
