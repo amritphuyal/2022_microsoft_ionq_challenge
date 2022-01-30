@@ -26,3 +26,28 @@ The game explores superposition properties of qubits as follows:
  - Once all the tiles are marked or entangled the quantum circuit of the game is initialized and the qubits are measured reviling the final state of the game.
  - We then run an Error-correcting algorithm by repetition.
  - Who ever has 3 in a line wins. If both will then the code is run again until one one wins.
+
+
+The repository consists of two main project files : 
+- game_interface.py
+- back-end.py
+
+
+The maiin component of the game is **back-end.py**
+
+We used 9 different qubits to represent the tiles and then designed an algorithm to allow entaglement when players switch to Quantum mode.
+
+
+###################
+#    #     #      #
+# 6  # 7   #  8   #
+#    #     #      #
+###################
+#    #    #       #
+#  3 # 4  # 5     #  
+#    #    #       #
+###################
+#    #    #       #
+# 0  # 1  #  2    #
+#    #    #       #   
+###################
